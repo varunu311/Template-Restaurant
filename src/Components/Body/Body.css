@@ -4,25 +4,24 @@
   background-size: 100% 100%;
   color: rgb(255, 187, 0);
   width: 100vw;
+  overflow: hidden;
 }
 
 section {
   position: relative;
-  transition: opacity 0.5s ease, transform 0.55s ease;
-  opacity: 0;
-  transform: translateY(0px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0.05;
+  transform: translateY(-100px); /* Starting position */
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
 
 section.active {
   opacity: 1;
-  transform: translateY(0);
-}
-
-.About-Us.active {
-  top: 0vh;
+  transform: translateY(-100px); /* End position */
 }
 
 section.active::before {
@@ -50,21 +49,22 @@ h2 {
   color: #ffcc00;
 }
 
-p {
+.section-content-text {
   line-height: 1.6;
+  width: 30vw;
+
 }
 
 .section-img {
-  margin-top: -100px;
   transition: .25s;
-  height: 400px;
+  height: 50vh;
   box-shadow: 5px 5px 50px 10px rgb(5, 5, 5);
   border-radius: 15px;
 }
 
 .section-text {
   width: 30vw;
-  margin: 150px;
+  margin: 50px;
   margin-top: 0px;
 }
 

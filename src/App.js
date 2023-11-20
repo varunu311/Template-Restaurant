@@ -5,6 +5,7 @@ import Body from './Components/Body/Body';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Components/Header/Header";
 import React from 'react';
+import { PopupProvider } from './Components/PopupContext';
 
 
 function App() {
@@ -17,13 +18,16 @@ function App() {
 
   return (
     <div>
-      <Header />
-      <header>
-        <Navbar />
-      </header>
-      <ImageSlider images={images}/>
-      <Body />
-      <Footer />
+      <PopupProvider >
+        <Header />
+          <header>
+            <Navbar />
+          </header>
+          <ImageSlider images={images}/>
+          <Body />
+        <Footer />
+      </PopupProvider >
+
     </div>
   );
 }

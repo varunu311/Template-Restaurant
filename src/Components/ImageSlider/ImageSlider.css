@@ -78,10 +78,9 @@
   color: rgb(255, 255, 255);
   background-color: rgba(0, 0, 0, 0.574);
   backdrop-filter: blur(1px);
-  font-size: 15vh;
+  font-size: 13vh;
   text-align: center;
   text-justify: center;
-  padding: 0px;
   width: 100vw;
   text-align: center;
   text-justify: center;
@@ -90,124 +89,6 @@
 .slider-subtitle{
   text-align: center;
   text-justify: center;
-}
-
-.popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
-  z-index: 100; /* Ensure it covers everything else */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  backdrop-filter: blur(20px);
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.popup-content {
-  background-color: rgba(27, 23, 23, 0.234);
-  width: 100%; 
-  height: 100%; 
-  padding: 20px;
-  overflow-y: auto; /* Enable scrolling for content */
-  position: relative; /* For positioning the close button */
-}
-
-.popup-close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  border-radius: 10px;
-  background-color: rgba(31, 31, 31, 0.192);
-  color: white;
-  border: none;
-}
-
-.popup-close-button:hover {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  border-radius: 10px;
-  background-color: rgba(31, 31, 31, 0.032);
-  color: rgb(255, 183, 0);
-}
-
-.popup-tabs {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-}
-
-.popup-tabs button {
-  cursor: pointer;
-  padding: 10px 20px;
-  margin: 0 5px;
-  border: none;
-  background-color: transparent;
-  transition: background-color 0.3s ease;
-  font-size: 16px;
-  color: #ffffff;
-}
-
-.popup-tabs button:hover {
-  cursor: pointer;
-  padding: 10px 20px;
-  margin: 0 5px;
-  border: none;
-  background-color: transparent;
-  transition: background-color 0.3s ease;
-  font-size: 16px;
-  color: #ffffff;
-  background-color: rgba(170, 99, 5, 0.592);
-
-}
-
-.popup-tab-content {
-  padding: 20px;
-  border-top: 1px solid #ffffff; /* Border top to separate from tabs */
-  height: calc(100% - 50px); /* Adjust height based on tab bar height */
-  overflow-y: auto;
-}
-
-.popup-tab-content ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.popup-tab-content li {
-  padding: 10px;
-  margin: 5px 0;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.5s ease;
-  color:white;
-}
-
-.popup-tab-content li:hover {
-  background-color:rgba(170, 99, 5, 0.592); 
-  color:white;
-  transition: background-color 0.5s ease;
-
-}
-
-.slider-title, .slider-subtitle {
-  opacity: 0; /* Initially hide the elements */
-  animation: fadeInUp 0.7s ease-out forwards;
-}
-
-.slider-title {
-  animation-delay: 0.3s; /* Delay for title */
-  text-align: center; /* Center the title */
-}
-
-.slider-subtitle {
-  animation-delay: 3s; /* Delay for subtitle */
-  text-align: center; /* Ensure this is centered */
 }
 
 /* Keyframes for animation */

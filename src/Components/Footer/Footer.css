@@ -1,13 +1,51 @@
-.footer{
-    border-top: white solid 1px;
+.footer-area {
     background-color: rgb(16, 18, 20);
+    color: #828080;
+    padding: 20px 0;
     width: 100vw;
-}
+  }
 
-h3{
-    color: white !important;
-}
-
-p{
-    color: white;
-}
+  .footer-row {
+    text-align: center;
+    text-justify: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+  
+  .footer-column {
+    text-align: center;
+    text-justify: center;
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+  }
+  
+  .footer-column h5 {
+    text-align: center;
+    text-justify: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .address-section, .hours-section, .contact-section {
+    margin-bottom: 20px;
+  }
+  
+  .text-center {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-column {
+      margin-bottom: 20px;
+    }
+  }
+  
