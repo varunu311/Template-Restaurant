@@ -1,0 +1,29 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.584);
+    padding: 20px;
+    right: -300px;
+    z-index: 100;
+    backdrop-filter: blur(20px);
+  }
+  
+  .sidebar.open {
+    right: 0;
+    transform: translateX(0);
+    z-index: 101;
+  }
+  
+  .sidebar-title{
+    color: white;
+    padding: 30px;
+  }
+  
+  .sidebar-close-button{
+    margin-left: 35%;
+    border-radius: 15px;
+    background-color: none;
+    padding: 5px 20px;
+  }

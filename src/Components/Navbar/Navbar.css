@@ -1,0 +1,12 @@
+.navbar.navbar-expand-lg.navbar-dark.bg-dark {
+    background-color: rgb(16, 18, 20)!important;
+  }
+
+  .container{
+    align-items: left;
+    align-content: left;
+    display: flex;
+    justify-content: left;
+    justify-items: left;
+    margin: 0;
+  }

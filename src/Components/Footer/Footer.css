@@ -1,0 +1,13 @@
+.footer{
+    border-top: white solid 1px;
+    background-color: rgb(16, 18, 20);
+    width: 100vw;
+}
+
+h3{
+    color: white !important;
+}
+
+p{
+    color: white;
+}
